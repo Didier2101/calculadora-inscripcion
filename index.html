@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de Afiliación</title>
+</head>
+
+<body>
+    <h2>Calculadora de Valores de Afiliación</h2>
+    <form id="formularioAfiliacion">
+        <label for="tarifa">Selecciona la Tarifa de Inscripción:</label>
+        <select id="tarifa">
+            <option value="500000">Comprador - $500,000</option>
+            <option value="400000">Vendedor - $400,000</option>
+            <option value="120000">Expositor - $120,000</option>
+        </select>
+
+        <label for="tipoAfiliado">Selecciona el Tipo de Afiliado:</label>
+        <select id="tipoAfiliado">
+            <option value="asociado">Asociado</option>
+            <option value="no_asociado">No Asociado</option>
+            <option value="extranjero">Extranjero</option>
+        </select>
+
+        <button type="button" onclick="calcularValor()">Calcular</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
